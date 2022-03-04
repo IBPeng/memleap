@@ -1,0 +1,42 @@
+------------- NVBit (NVidia Binary Instrumentation Tool v1.3.1) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 0 - End of the instruction interval where to apply instrumentation
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TARGET_KERNEL =  - Selected kernel to instrument
+----------------------------------------------------------------------------------------------------
+Total Memory (MB) : 3
+Each matrix : 512x512 (4 bytes)
+device_count=4
+CUDA compute capability : 7.0
+Allocation Scheme : naive Unified Memory
+nvbit_at_ctx_init: channel_dev 0x2000a0000000 channel_dev[0] 0x2000a0000000
+	cudaMallocManaged 1048576 bytes [0x2000a0200000 0x2000a0300000]
+	cudaMallocManaged 1048576 bytes [0x2000a0300000 0x2000a0400000]
+	cudaMallocManaged 1048576 bytes [0x2000a0400000 0x2000a0500000]
+h_a 0x2000a0200000, d_a=0x2000a0200000
+Inspecting function matrixMultiplyKernel(float*, float*, float*, unsigned long) at address 0x200080f9f300
+Kernel matrixMultiplyKernel(float*, float*, float*, unsigned long) - grid size 16,16,1 - block size 32,32,1 - nregs 31 - shmem 8192 - cuda stream id 275597488
+Kernel_used_bytes = 3145728
+	UM_OBJ    0 :: used    1048576 bytes, unused          0 bytes
+	UM_OBJ    1 :: used    1048576 bytes, unused          0 bytes
+	UM_OBJ    2 :: used    1048576 bytes, unused          0 bytes
+
+
+Elapsed time (ms) : 374.343, Bandwidth (GB/s) : 0.00801404
+h_ptr[1]=511.000000 != 512.000000 
+Validation: Failed
+
+
+Enter process_global_data_access
+Total used_bytes = 3145728
+	UM_OBJ    0 :: used    1048576 bytes, unused          0 bytes
+	UM_OBJ    1 :: used    1048576 bytes, unused          0 bytes
+	UM_OBJ    2 :: used    1048576 bytes, unused          0 bytes
+nvbit_at_ctx_term
+
+----------------------------------------------------------------------------------------------------
+NVBit exit

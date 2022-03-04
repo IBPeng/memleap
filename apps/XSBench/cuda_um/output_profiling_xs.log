@@ -1,0 +1,136 @@
+------------- NVBit (NVidia Binary Instrumentation Tool v1.3.1) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 0 - End of the instruction interval where to apply instrumentation
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TARGET_KERNEL =  - Selected kernel to instrument
+----------------------------------------------------------------------------------------------------
+================================================================================
+                   __   __ ___________                 _                        
+                   \ \ / //  ___| ___ \               | |                       
+                    \ V / \ `--.| |_/ / ___ _ __   ___| |__                     
+                    /   \  `--. \ ___ \/ _ \ '_ \ / __| '_ \                    
+                   / /^\ \/\__/ / |_/ /  __/ | | | (__| | | |                   
+                   \/   \/\____/\____/ \___|_| |_|\___|_| |_|                   
+
+================================================================================
+                    Developed at Argonne National Laboratory
+                                   Version: 19
+================================================================================
+                                  INPUT SUMMARY
+================================================================================
+Programming Model:            CUDA
+CUDA Device:                  Tesla V100-SXM2-16GB
+Simulation Method:            Event Based
+Grid Type:                    Unionized Grid
+Materials:                    12
+H-M Benchmark Size:           large
+Total Nuclides:               355
+Gridpoints (per Nuclide):     11,303
+Unionized Energy Gridpoints:  4,012,565
+Total XS Lookups:             150,000
+Est. Memory Usage (MB):       5,649
+Binary File Mode:             Off
+================================================================================
+                         INITIALIZATION - DO NOT PROFILE
+================================================================================
+Intializing nuclide grids...
+Found 4 GPUs, set to use device 0
+device 0 has cudaDevAttrConcurrentManagedAccess. = 1
+nvbit_at_ctx_init: channel_dev 0x2000a0000000 channel_dev[0] 0x2000a0000000
+	cudaMallocManaged 192603120 bytes [0x2000a0200000 0x2000ab9ae3f0]
+after allocating SD.nuclide_grid 0x2000a0200000
+Intializing unionized grid...
+	cudaMallocManaged 32100520 bytes [0x2000aba00000 0x2000ad89d0a8]
+after allocating SD.unionized_energy_array 0x2000aba00000
+	cudaMallocManaged 5697842300 bytes [0x200140000000 0x2002939e2c7c]
+after allocating SD.index_grid 0x200140000000
+Intializing material data...
+	cudaMallocManaged 48 bytes [0x200293a00000 0x200293a00030]
+after allocating num_nucs 0x0x200293a00000
+	cudaMallocManaged 15408 bytes [0x200293a00200 0x200293a03e30]
+after allocating mats 0x0x200293a00200
+	cudaMallocManaged 30816 bytes [0x200293a04000 0x200293a0b860]
+after allocating mats 0x0x200293a04000
+Intialization complete. Allocated 5648 MB of data on CPU.
+Allocating and moving simulation data to GPU memory space...
+	D_OBJ    0 :: cuMemAlloc_v2 1200000 bytes [0x20013dc00000 0x20013dd24f80]
+GPU Intialization complete. Allocated 5649 MB of data on GPU.
+
+================================================================================
+                                   SIMULATION
+================================================================================
+Simulation Kernel:"Optimization 1 - basic sample/lookup kernel splitting"
+Allocating additional device data required by kernel...
+	D_OBJ    1 :: cuMemAlloc_v2 1200000 bytes [0x20013de00000 0x20013df24f80]
+	D_OBJ    2 :: cuMemAlloc_v2 600000 bytes [0x20013dd25000 0x20013ddb77c0]
+Allocated an additional 2 MB of data on GPU.
+Beginning optimized simulation...
+Inspecting function sampling_kernel(Inputs, SimulationData) at address 0x2001100b0f00
+Kernel sampling_kernel(Inputs, SimulationData) - grid size 4688,1,1 - block size 32,1,1 - nregs 22 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 1800000
+	D_OBJ    1 :: used    1200000 bytes, unused          0 bytes
+	D_OBJ    2 :: used     600000 bytes, unused          0 bytes
+
+
+Inspecting function xs_lookup_kernel_optimization_1(Inputs, SimulationData) at address 0x2001100ae700
+Kernel xs_lookup_kernel_optimization_1(Inputs, SimulationData) - grid size 4688,1,1 - block size 32,1,1 - nregs 50 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 229221306
+	UM_OBJ    0 :: used  168241984 bytes, unused   24361136 bytes
+	UM_OBJ    1 :: used    5783828 bytes, unused   26316692 bytes
+	UM_OBJ    2 :: used   33154372 bytes, unused 5664687928 bytes
+	UM_OBJ    3 :: used         48 bytes, unused          0 bytes
+	UM_OBJ    4 :: used       1980 bytes, unused      13428 bytes
+	UM_OBJ    5 :: used       3872 bytes, unused      26944 bytes
+	D_OBJ    0 :: used     989916 bytes, unused     210084 bytes
+	D_OBJ    1 :: used    1200000 bytes, unused          0 bytes
+	D_OBJ    2 :: used     600000 bytes, unused          0 bytes
+
+
+Reducing verification results...
+	D_OBJ    3 :: cuMemAlloc_v2 13059 bytes [0x20013ddb7800 0x20013ddbab03]
+Inspecting function void thrust::cuda_cub::cub::DeviceReduceKernel<thrust::cuda_cub::cub::DeviceReducePolicy<int, int, thrust::plus<int> >::Policy600, unsigned long*, int*, int, thrust::plus<int> >(unsigned long*, int*, int, thrust::cuda_cub::cub::GridEvenShare<int>, thrust::plus<int>) at address 0x20011009c200
+Kernel void thrust::cuda_cub::cub::DeviceReduceKernel<thrust::cuda_cub::cub::DeviceReducePolicy<int, int, thrust::plus<int> >::Policy600, unsigned long*, int*, int, thrust::plus<int> >(unsigned long*, int*, int, thrust::cuda_cub::cub::GridEvenShare<int>, thrust::plus<int>) - grid size 37,1,1 - block size 256,1,1 - nregs 32 - shmem 48 - cuda stream id 1
+Kernel_used_bytes = 1189972
+	D_OBJ    0 :: used    1189824 bytes, unused      10176 bytes
+	D_OBJ    3 :: used        148 bytes, unused      12911 bytes
+
+
+Inspecting function void thrust::cuda_cub::cub::DeviceReduceSingleTileKernel<thrust::cuda_cub::cub::DeviceReducePolicy<int, int, thrust::plus<int> >::Policy600, int*, int*, int, thrust::plus<int>, int>(int*, int*, int, thrust::plus<int>, int) at address 0x200110097e00
+Kernel void thrust::cuda_cub::cub::DeviceReduceSingleTileKernel<thrust::cuda_cub::cub::DeviceReducePolicy<int, int, thrust::plus<int> >::Policy600, int*, int*, int, thrust::plus<int>, int>(int*, int*, int, thrust::plus<int>, int) - grid size 1,1,1 - block size 256,1,1 - nregs 32 - shmem 48 - cuda stream id 1
+Kernel_used_bytes = 152
+	D_OBJ    3 :: used        152 bytes, unused      12907 bytes
+
+
+	Data Movement D_OBJ     3 -> Host[0x7fffffffbe90] (4 bytes) 
+
+Simulation complete.
+================================================================================
+                                     RESULTS
+================================================================================
+Runtime:     35.255 seconds
+Lookups:     150,000
+Lookups/s:   4,254
+Verification checksum: 12361 (WARNING - INAVALID CHECKSUM!)
+================================================================================
+
+
+Enter process_global_data_access
+Total used_bytes = 229428994
+	UM_OBJ    0 :: used  168241984 bytes, unused   24361136 bytes
+	UM_OBJ    1 :: used    5783828 bytes, unused   26316692 bytes
+	UM_OBJ    2 :: used   33154372 bytes, unused 5664687928 bytes
+	UM_OBJ    3 :: used         48 bytes, unused          0 bytes
+	UM_OBJ    4 :: used       1980 bytes, unused      13428 bytes
+	UM_OBJ    5 :: used       3872 bytes, unused      26944 bytes
+	D_OBJ    0 :: used    1197452 bytes, unused       2548 bytes
+	D_OBJ    1 :: used    1200000 bytes, unused          0 bytes
+	D_OBJ    2 :: used     600000 bytes, unused          0 bytes
+	D_OBJ    3 :: used        152 bytes, unused      12907 bytes
+nvbit_at_ctx_term
+
+----------------------------------------------------------------------------------------------------
+NVBit exit

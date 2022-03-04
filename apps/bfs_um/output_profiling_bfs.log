@@ -1,0 +1,252 @@
+------------- NVBit (NVidia Binary Instrumentation Tool v1.3.1) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 0 - End of the instruction interval where to apply instrumentation
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TARGET_KERNEL =  - Selected kernel to instrument
+----------------------------------------------------------------------------------------------------
+Reading File
+nvbit_at_ctx_init: channel_dev 0x2000a0000000 channel_dev[0] 0x2000a0000000
+	cudaMallocManaged 8000000 bytes [0x2000a0200000 0x2000a09a1200]
+	cudaMallocManaged 1000000 bytes [0x2000a0a00000 0x2000a0af4240]
+	cudaMallocManaged 1000000 bytes [0x2000a0af4400 0x2000a0be8640]
+	cudaMallocManaged 1000000 bytes [0x2000a0c00000 0x2000a0cf4240]
+	cudaMallocManaged 23999880 bytes [0x2000a0e00000 0x2000a24e3588]
+Read File
+	cudaMallocManaged 4000000 bytes [0x2000a2600000 0x2000a29d0900]
+	cudaMallocManaged 1 bytes [0x2000a0be8800 0x2000a0be8801]
+Copied Everything to GPU memory
+Start traversing the tree
+Inspecting function Kernel(Node*, int*, bool*, bool*, bool*, int*, int) at address 0x200080f9fd00
+Kernel Kernel(Node*, int*, bool*, bool*, bool*, int*, int) - grid size 1954,1,1 - block size 512,1,1 - nregs 21 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 1000042
+	UM_OBJ    0 :: used          8 bytes, unused    7999992 bytes
+	UM_OBJ    1 :: used    1000000 bytes, unused          0 bytes
+	UM_OBJ    2 :: used          3 bytes, unused     999997 bytes
+	UM_OBJ    3 :: used          3 bytes, unused     999997 bytes
+	UM_OBJ    4 :: used         12 bytes, unused   23999868 bytes
+	UM_OBJ    5 :: used         16 bytes, unused    3999984 bytes
+
+
+Inspecting function Kernel2(bool*, bool*, bool*, bool*, int) at address 0x200080f9f300
+Kernel Kernel2(bool*, bool*, bool*, bool*, int) - grid size 1954,1,1 - block size 512,1,1 - nregs 14 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 1000007
+	UM_OBJ    1 :: used          3 bytes, unused     999997 bytes
+	UM_OBJ    2 :: used    1000000 bytes, unused          0 bytes
+	UM_OBJ    3 :: used          3 bytes, unused     999997 bytes
+	UM_OBJ    6 :: used          1 bytes, unused          0 bytes
+
+
+Kernel Kernel(Node*, int*, bool*, bool*, bool*, int*, int) - grid size 1954,1,1 - block size 512,1,1 - nregs 21 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 1000289
+	UM_OBJ    0 :: used         24 bytes, unused    7999976 bytes
+	UM_OBJ    1 :: used    1000000 bytes, unused          0 bytes
+	UM_OBJ    2 :: used         24 bytes, unused     999976 bytes
+	UM_OBJ    3 :: used         25 bytes, unused     999975 bytes
+	UM_OBJ    4 :: used        108 bytes, unused   23999772 bytes
+	UM_OBJ    5 :: used        108 bytes, unused    3999892 bytes
+
+
+Kernel Kernel2(bool*, bool*, bool*, bool*, int) - grid size 1954,1,1 - block size 512,1,1 - nregs 14 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 1000049
+	UM_OBJ    1 :: used         24 bytes, unused     999976 bytes
+	UM_OBJ    2 :: used    1000000 bytes, unused          0 bytes
+	UM_OBJ    3 :: used         24 bytes, unused     999976 bytes
+	UM_OBJ    6 :: used          1 bytes, unused          0 bytes
+
+
+Kernel Kernel(Node*, int*, bool*, bool*, bool*, int*, int) - grid size 1954,1,1 - block size 512,1,1 - nregs 21 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 1001872
+	UM_OBJ    0 :: used        192 bytes, unused    7999808 bytes
+	UM_OBJ    1 :: used    1000000 bytes, unused          0 bytes
+	UM_OBJ    2 :: used        137 bytes, unused     999863 bytes
+	UM_OBJ    3 :: used        146 bytes, unused     999854 bytes
+	UM_OBJ    4 :: used        632 bytes, unused   23999248 bytes
+	UM_OBJ    5 :: used        632 bytes, unused    3999368 bytes
+
+
+Kernel Kernel2(bool*, bool*, bool*, bool*, int) - grid size 1954,1,1 - block size 512,1,1 - nregs 14 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 1000269
+	UM_OBJ    1 :: used        134 bytes, unused     999866 bytes
+	UM_OBJ    2 :: used    1000000 bytes, unused          0 bytes
+	UM_OBJ    3 :: used        134 bytes, unused     999866 bytes
+	UM_OBJ    6 :: used          1 bytes, unused          0 bytes
+
+
+Kernel Kernel(Node*, int*, bool*, bool*, bool*, int*, int) - grid size 1954,1,1 - block size 512,1,1 - nregs 21 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 1011805
+	UM_OBJ    0 :: used       1072 bytes, unused    7998928 bytes
+	UM_OBJ    1 :: used    1000000 bytes, unused          0 bytes
+	UM_OBJ    2 :: used        853 bytes, unused     999147 bytes
+	UM_OBJ    3 :: used        917 bytes, unused     999083 bytes
+	UM_OBJ    4 :: used       3732 bytes, unused   23996148 bytes
+	UM_OBJ    5 :: used       3732 bytes, unused    3996268 bytes
+
+
+Kernel Kernel2(bool*, bool*, bool*, bool*, int) - grid size 1954,1,1 - block size 512,1,1 - nregs 14 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 1001599
+	UM_OBJ    1 :: used        799 bytes, unused     999201 bytes
+	UM_OBJ    2 :: used    1000000 bytes, unused          0 bytes
+	UM_OBJ    3 :: used        799 bytes, unused     999201 bytes
+	UM_OBJ    6 :: used          1 bytes, unused          0 bytes
+
+
+Kernel Kernel(Node*, int*, bool*, bool*, bool*, int*, int) - grid size 1954,1,1 - block size 512,1,1 - nregs 21 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 1066664
+	UM_OBJ    0 :: used       6392 bytes, unused    7993608 bytes
+	UM_OBJ    1 :: used    1000000 bytes, unused          0 bytes
+	UM_OBJ    2 :: used       4792 bytes, unused     995208 bytes
+	UM_OBJ    3 :: used       5220 bytes, unused     994780 bytes
+	UM_OBJ    4 :: used      21516 bytes, unused   23978364 bytes
+	UM_OBJ    5 :: used      21462 bytes, unused    3978538 bytes
+
+
+Kernel Kernel2(bool*, bool*, bool*, bool*, int) - grid size 1954,1,1 - block size 512,1,1 - nregs 14 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 1009143
+	UM_OBJ    1 :: used       4571 bytes, unused     995429 bytes
+	UM_OBJ    2 :: used    1000000 bytes, unused          0 bytes
+	UM_OBJ    3 :: used       4571 bytes, unused     995429 bytes
+	UM_OBJ    6 :: used          1 bytes, unused          0 bytes
+
+
+Kernel Kernel(Node*, int*, bool*, bool*, bool*, int*, int) - grid size 1954,1,1 - block size 512,1,1 - nregs 21 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 1384328
+	UM_OBJ    0 :: used      36568 bytes, unused    7963432 bytes
+	UM_OBJ    1 :: used    1000000 bytes, unused          0 bytes
+	UM_OBJ    2 :: used      27837 bytes, unused     972163 bytes
+	UM_OBJ    3 :: used      30335 bytes, unused     969665 bytes
+	UM_OBJ    4 :: used     121760 bytes, unused   23878120 bytes
+	UM_OBJ    5 :: used     119791 bytes, unused    3880209 bytes
+
+
+Kernel Kernel2(bool*, bool*, bool*, bool*, int) - grid size 1954,1,1 - block size 512,1,1 - nregs 14 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 1050855
+	UM_OBJ    1 :: used      25427 bytes, unused     974573 bytes
+	UM_OBJ    2 :: used    1000000 bytes, unused          0 bytes
+	UM_OBJ    3 :: used      25427 bytes, unused     974573 bytes
+	UM_OBJ    6 :: used          1 bytes, unused          0 bytes
+
+
+Kernel Kernel(Node*, int*, bool*, bool*, bool*, int*, int) - grid size 1954,1,1 - block size 512,1,1 - nregs 21 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 3325211
+	UM_OBJ    0 :: used     203416 bytes, unused    7796584 bytes
+	UM_OBJ    1 :: used    1000000 bytes, unused          0 bytes
+	UM_OBJ    2 :: used     173405 bytes, unused     826595 bytes
+	UM_OBJ    3 :: used     187207 bytes, unused     812793 bytes
+	UM_OBJ    4 :: used     679462 bytes, unused   23320418 bytes
+	UM_OBJ    5 :: used     623527 bytes, unused    3376473 bytes
+
+
+Kernel Kernel2(bool*, bool*, bool*, bool*, int) - grid size 1954,1,1 - block size 512,1,1 - nregs 14 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 1262523
+	UM_OBJ    1 :: used     131261 bytes, unused     868739 bytes
+	UM_OBJ    2 :: used    1000000 bytes, unused          0 bytes
+	UM_OBJ    3 :: used     131261 bytes, unused     868739 bytes
+	UM_OBJ    6 :: used          1 bytes, unused          0 bytes
+
+
+Kernel Kernel(Node*, int*, bool*, bool*, bool*, int*, int) - grid size 1954,1,1 - block size 512,1,1 - nregs 21 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 15375559
+	UM_OBJ    0 :: used    1050088 bytes, unused    6949912 bytes
+	UM_OBJ    1 :: used    1000000 bytes, unused          0 bytes
+	UM_OBJ    2 :: used     768081 bytes, unused     231919 bytes
+	UM_OBJ    3 :: used     809893 bytes, unused     190107 bytes
+	UM_OBJ    4 :: used    3479534 bytes, unused   20520346 bytes
+	UM_OBJ    5 :: used    2315000 bytes, unused    1685000 bytes
+
+
+Kernel Kernel2(bool*, bool*, bool*, bool*, int) - grid size 1954,1,1 - block size 512,1,1 - nregs 14 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 1901701
+	UM_OBJ    1 :: used     450850 bytes, unused     549150 bytes
+	UM_OBJ    2 :: used    1000000 bytes, unused          0 bytes
+	UM_OBJ    3 :: used     450850 bytes, unused     549150 bytes
+	UM_OBJ    6 :: used          1 bytes, unused          0 bytes
+
+
+Kernel Kernel(Node*, int*, bool*, bool*, bool*, int*, int) - grid size 1954,1,1 - block size 512,1,1 - nregs 21 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 41404695
+	UM_OBJ    0 :: used    3606800 bytes, unused    4393200 bytes
+	UM_OBJ    1 :: used    1000000 bytes, unused          0 bytes
+	UM_OBJ    2 :: used     762354 bytes, unused     237646 bytes
+	UM_OBJ    3 :: used     997715 bytes, unused       2285 bytes
+	UM_OBJ    4 :: used   11390315 bytes, unused   12609565 bytes
+	UM_OBJ    5 :: used    3138846 bytes, unused     861154 bytes
+
+
+Kernel Kernel2(bool*, bool*, bool*, bool*, int) - grid size 1954,1,1 - block size 512,1,1 - nregs 14 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 1739257
+	UM_OBJ    1 :: used     369628 bytes, unused     630372 bytes
+	UM_OBJ    2 :: used    1000000 bytes, unused          0 bytes
+	UM_OBJ    3 :: used     369628 bytes, unused     630372 bytes
+	UM_OBJ    6 :: used          1 bytes, unused          0 bytes
+
+
+Kernel Kernel(Node*, int*, bool*, bool*, bool*, int*, int) - grid size 1954,1,1 - block size 512,1,1 - nregs 21 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 17852030
+	UM_OBJ    0 :: used    2957024 bytes, unused    5042976 bytes
+	UM_OBJ    1 :: used    1000000 bytes, unused          0 bytes
+	UM_OBJ    2 :: used      60363 bytes, unused     939637 bytes
+	UM_OBJ    3 :: used     930326 bytes, unused      69674 bytes
+	UM_OBJ    4 :: used    8033244 bytes, unused   15966636 bytes
+	UM_OBJ    5 :: used     282677 bytes, unused    3717323 bytes
+
+
+Kernel Kernel2(bool*, bool*, bool*, bool*, int) - grid size 1954,1,1 - block size 512,1,1 - nregs 14 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 1034547
+	UM_OBJ    1 :: used      17273 bytes, unused     982727 bytes
+	UM_OBJ    2 :: used    1000000 bytes, unused          0 bytes
+	UM_OBJ    3 :: used      17273 bytes, unused     982727 bytes
+	UM_OBJ    6 :: used          1 bytes, unused          0 bytes
+
+
+Kernel Kernel(Node*, int*, bool*, bool*, bool*, int*, int) - grid size 1954,1,1 - block size 512,1,1 - nregs 21 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 1442425
+	UM_OBJ    0 :: used     138184 bytes, unused    7861816 bytes
+	UM_OBJ    1 :: used    1000000 bytes, unused          0 bytes
+	UM_OBJ    2 :: used         50 bytes, unused     999950 bytes
+	UM_OBJ    3 :: used      57493 bytes, unused     942507 bytes
+	UM_OBJ    4 :: used     245360 bytes, unused   23754520 bytes
+	UM_OBJ    5 :: used        340 bytes, unused    3999660 bytes
+
+
+Kernel Kernel2(bool*, bool*, bool*, bool*, int) - grid size 1954,1,1 - block size 512,1,1 - nregs 14 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 1000059
+	UM_OBJ    1 :: used         29 bytes, unused     999971 bytes
+	UM_OBJ    2 :: used    1000000 bytes, unused          0 bytes
+	UM_OBJ    3 :: used         29 bytes, unused     999971 bytes
+	UM_OBJ    6 :: used          1 bytes, unused          0 bytes
+
+
+Kernel Kernel(Node*, int*, bool*, bool*, bool*, int*, int) - grid size 1954,1,1 - block size 512,1,1 - nregs 21 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 1000522
+	UM_OBJ    0 :: used        232 bytes, unused    7999768 bytes
+	UM_OBJ    1 :: used    1000000 bytes, unused          0 bytes
+	UM_OBJ    3 :: used         58 bytes, unused     999942 bytes
+	UM_OBJ    4 :: used        232 bytes, unused   23999648 bytes
+
+
+Kernel Kernel2(bool*, bool*, bool*, bool*, int) - grid size 1954,1,1 - block size 512,1,1 - nregs 14 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 1000000
+	UM_OBJ    2 :: used    1000000 bytes, unused          0 bytes
+
+
+Kernel Executed 12 times for 21.155 seconds
+Result stored in result.txt
+
+
+Enter process_global_data_access
+Total used_bytes = 67435236
+	UM_OBJ    0 :: used    8000000 bytes, unused          0 bytes
+	UM_OBJ    1 :: used    1000000 bytes, unused          0 bytes
+	UM_OBJ    2 :: used    1000000 bytes, unused          0 bytes
+	UM_OBJ    3 :: used    1000000 bytes, unused          0 bytes
+	UM_OBJ    4 :: used   23975907 bytes, unused      23973 bytes
+	UM_OBJ    5 :: used    3996559 bytes, unused       3441 bytes
+	UM_OBJ    6 :: used          1 bytes, unused          0 bytes
+nvbit_at_ctx_term
+
+----------------------------------------------------------------------------------------------------
+NVBit exit

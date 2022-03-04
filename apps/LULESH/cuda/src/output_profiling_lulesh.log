@@ -1,0 +1,707 @@
+------------- NVBit (NVidia Binary Instrumentation Tool v1.3.1) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 0 - End of the instruction interval where to apply instrumentation
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+       TARGET_KERNEL =  - Selected kernel to instrument
+----------------------------------------------------------------------------------------------------
+Host lassen25 using GPU 0: Tesla V100-SXM2-16GB
+nvbit_at_ctx_init: channel_dev 0x2000a0000000 channel_dev[0] 0x2000a0000000
+	D_OBJ    0 :: cuMemAlloc_v2 11943936 bytes [0x20013ec00000 0x20013f764000]
+Inspecting function void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long) at address 0x200080fa5800
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 11943936
+	D_OBJ    0 :: used   11943936 bytes, unused          0 bytes
+
+
+	D_OBJ    1 :: cuMemAlloc_v2 95551488 bytes [0x200110000000 0x200115b20000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long) - grid size 46656,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 95551488
+	D_OBJ    1 :: used   95551488 bytes, unused          0 bytes
+
+
+	D_OBJ    2 :: cuMemAlloc_v2 11943936 bytes [0x200115c00000 0x200116764000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 11943936
+	D_OBJ    2 :: used   11943936 bytes, unused          0 bytes
+
+
+	D_OBJ    3 :: cuMemAlloc_v2 11943936 bytes [0x200116800000 0x200117364000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 11943936
+	D_OBJ    3 :: used   11943936 bytes, unused          0 bytes
+
+
+	D_OBJ    4 :: cuMemAlloc_v2 11943936 bytes [0x200117400000 0x200117f64000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 11943936
+	D_OBJ    4 :: used   11943936 bytes, unused          0 bytes
+
+
+	D_OBJ    5 :: cuMemAlloc_v2 11943936 bytes [0x200118000000 0x200118b64000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 11943936
+	D_OBJ    5 :: used   11943936 bytes, unused          0 bytes
+
+
+	D_OBJ    6 :: cuMemAlloc_v2 11943936 bytes [0x200118c00000 0x200119764000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 11943936
+	D_OBJ    6 :: used   11943936 bytes, unused          0 bytes
+
+
+	D_OBJ    7 :: cuMemAlloc_v2 11943936 bytes [0x200119800000 0x20011a364000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 11943936
+	D_OBJ    7 :: used   11943936 bytes, unused          0 bytes
+
+
+	D_OBJ    8 :: cuMemAlloc_v2 11943936 bytes [0x20011a400000 0x20011af64000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 11943936
+	D_OBJ    8 :: used   11943936 bytes, unused          0 bytes
+
+
+	D_OBJ    9 :: cuMemAlloc_v2 23887872 bytes [0x20011b000000 0x20011c6c8000]
+Inspecting function void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) at address 0x200080fa1f00
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 23887872
+	D_OBJ    9 :: used   23887872 bytes, unused          0 bytes
+
+
+	D_OBJ   10 :: cuMemAlloc_v2 23887872 bytes [0x20011c800000 0x20011dec8000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 23887872
+	D_OBJ   10 :: used   23887872 bytes, unused          0 bytes
+
+
+	D_OBJ   11 :: cuMemAlloc_v2 23887872 bytes [0x20011e000000 0x20011f6c8000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 23887872
+	D_OBJ   11 :: used   23887872 bytes, unused          0 bytes
+
+
+	D_OBJ   12 :: cuMemAlloc_v2 23887872 bytes [0x2000f8200000 0x2000f98c8000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 23887872
+	D_OBJ   12 :: used   23887872 bytes, unused          0 bytes
+
+
+	D_OBJ   13 :: cuMemAlloc_v2 23887872 bytes [0x2000f9a00000 0x2000fb0c8000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 23887872
+	D_OBJ   13 :: used   23887872 bytes, unused          0 bytes
+
+
+	D_OBJ   14 :: cuMemAlloc_v2 23887872 bytes [0x2000fb200000 0x2000fc8c8000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 23887872
+	D_OBJ   14 :: used   23887872 bytes, unused          0 bytes
+
+
+	D_OBJ   15 :: cuMemAlloc_v2 23887872 bytes [0x2000fca00000 0x2000fe0c8000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 23887872
+	D_OBJ   15 :: used   23887872 bytes, unused          0 bytes
+
+
+	D_OBJ   16 :: cuMemAlloc_v2 23887872 bytes [0x2000fe200000 0x2000ff8c8000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 23887872
+	D_OBJ   16 :: used   23887872 bytes, unused          0 bytes
+
+
+	D_OBJ   17 :: cuMemAlloc_v2 23887872 bytes [0x2000db600000 0x2000dccc8000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 23887872
+	D_OBJ   17 :: used   23887872 bytes, unused          0 bytes
+
+
+	D_OBJ   18 :: cuMemAlloc_v2 23887872 bytes [0x2000dce00000 0x2000de4c8000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 23887872
+	D_OBJ   18 :: used   23887872 bytes, unused          0 bytes
+
+
+	D_OBJ   19 :: cuMemAlloc_v2 23887872 bytes [0x2000de600000 0x2000dfcc8000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 23887872
+	D_OBJ   19 :: used   23887872 bytes, unused          0 bytes
+
+
+	D_OBJ   20 :: cuMemAlloc_v2 23887872 bytes [0x2000c0000000 0x2000c16c8000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 23887872
+	D_OBJ   20 :: used   23887872 bytes, unused          0 bytes
+
+
+	D_OBJ   21 :: cuMemAlloc_v2 24389000 bytes [0x2000c1800000 0x2000c2f42588]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5955,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 24389000
+	D_OBJ   21 :: used   24389000 bytes, unused          0 bytes
+
+
+	D_OBJ   22 :: cuMemAlloc_v2 24389000 bytes [0x2000c3000000 0x2000c4742588]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5955,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 24389000
+	D_OBJ   22 :: used   24389000 bytes, unused          0 bytes
+
+
+	D_OBJ   23 :: cuMemAlloc_v2 24389000 bytes [0x2000c4800000 0x2000c5f42588]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5955,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 24389000
+	D_OBJ   23 :: used   24389000 bytes, unused          0 bytes
+
+
+	D_OBJ   24 :: cuMemAlloc_v2 24389000 bytes [0x2000c6000000 0x2000c7742588]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5955,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 24389000
+	D_OBJ   24 :: used   24389000 bytes, unused          0 bytes
+
+
+	D_OBJ   25 :: cuMemAlloc_v2 24389000 bytes [0x2000c7800000 0x2000c8f42588]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5955,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 24389000
+	D_OBJ   25 :: used   24389000 bytes, unused          0 bytes
+
+
+	D_OBJ   26 :: cuMemAlloc_v2 24389000 bytes [0x2000c9000000 0x2000ca742588]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5955,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 24389000
+	D_OBJ   26 :: used   24389000 bytes, unused          0 bytes
+
+
+	D_OBJ   27 :: cuMemAlloc_v2 24389000 bytes [0x2000ca800000 0x2000cbf42588]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5955,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 24389000
+	D_OBJ   27 :: used   24389000 bytes, unused          0 bytes
+
+
+	D_OBJ   28 :: cuMemAlloc_v2 24389000 bytes [0x2000cc000000 0x2000cd742588]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5955,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 24389000
+	D_OBJ   28 :: used   24389000 bytes, unused          0 bytes
+
+
+	D_OBJ   29 :: cuMemAlloc_v2 24389000 bytes [0x2000cd800000 0x2000cef42588]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5955,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 24389000
+	D_OBJ   29 :: used   24389000 bytes, unused          0 bytes
+
+
+	D_OBJ   30 :: cuMemAlloc_v2 24389000 bytes [0x2000cf000000 0x2000d0742588]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5955,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 24389000
+	D_OBJ   30 :: used   24389000 bytes, unused          0 bytes
+
+
+	D_OBJ   31 :: cuMemAlloc_v2 24389000 bytes [0x2000d0800000 0x2000d1f42588]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5955,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 24389000
+	D_OBJ   31 :: used   24389000 bytes, unused          0 bytes
+
+
+	D_OBJ   32 :: cuMemAlloc_v2 24389000 bytes [0x20009b400000 0x20009cb42588]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5955,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 24389000
+	D_OBJ   32 :: used   24389000 bytes, unused          0 bytes
+
+
+	D_OBJ   33 :: cuMemAlloc_v2 24389000 bytes [0x20009cc00000 0x20009e342588]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5955,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 24389000
+	D_OBJ   33 :: used   24389000 bytes, unused          0 bytes
+
+
+Inspecting function void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long>, thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long>(thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long) at address 0x200080fa0900
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long>, thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long>(thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long) - grid size 5832,1,1 - block size 256,1,1 - nregs 11 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 23887872
+	D_OBJ   19 :: used   23887872 bytes, unused          0 bytes
+
+
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long>, thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long>(thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long) - grid size 5832,1,1 - block size 256,1,1 - nregs 11 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 23887872
+	D_OBJ    9 :: used   23887872 bytes, unused          0 bytes
+
+
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long>, thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long>(thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long) - grid size 5832,1,1 - block size 256,1,1 - nregs 11 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 23887872
+	D_OBJ   10 :: used   23887872 bytes, unused          0 bytes
+
+
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long>, thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long>(thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long) - grid size 5832,1,1 - block size 256,1,1 - nregs 11 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 23887872
+	D_OBJ   11 :: used   23887872 bytes, unused          0 bytes
+
+
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long>, thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long>(thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long) - grid size 5832,1,1 - block size 256,1,1 - nregs 11 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 23887872
+	D_OBJ   14 :: used   23887872 bytes, unused          0 bytes
+
+
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long>, thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long>(thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long) - grid size 5955,1,1 - block size 256,1,1 - nregs 11 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 24389000
+	D_OBJ   24 :: used   24389000 bytes, unused          0 bytes
+
+
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long>, thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long>(thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long) - grid size 5955,1,1 - block size 256,1,1 - nregs 11 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 24389000
+	D_OBJ   25 :: used   24389000 bytes, unused          0 bytes
+
+
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long>, thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long>(thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long) - grid size 5955,1,1 - block size 256,1,1 - nregs 11 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 24389000
+	D_OBJ   26 :: used   24389000 bytes, unused          0 bytes
+
+
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long>, thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long>(thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long) - grid size 5955,1,1 - block size 256,1,1 - nregs 11 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 24389000
+	D_OBJ   27 :: used   24389000 bytes, unused          0 bytes
+
+
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long>, thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long>(thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long) - grid size 5955,1,1 - block size 256,1,1 - nregs 11 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 24389000
+	D_OBJ   28 :: used   24389000 bytes, unused          0 bytes
+
+
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long>, thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long>(thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long) - grid size 5955,1,1 - block size 256,1,1 - nregs 11 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 24389000
+	D_OBJ   29 :: used   24389000 bytes, unused          0 bytes
+
+
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long>, thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long>(thrust::cuda_cub::__fill::functor<thrust::detail::normal_iterator<thrust::device_ptr<double> >, double>, long) - grid size 5955,1,1 - block size 256,1,1 - nregs 11 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 24389000
+	D_OBJ   33 :: used   24389000 bytes, unused          0 bytes
+
+
+	Data Movement Host[0x11951070] -> D_OBJ    21 (24389000 bytes) 
+	Data Movement Host[0x13093600] -> D_OBJ    22 (24389000 bytes) 
+	Data Movement Host[0x147d5b90] -> D_OBJ    23 (24389000 bytes) 
+	Data Movement Host[0x200148000010] -> D_OBJ     1 (95551488 bytes) 
+	D_OBJ   34 :: cuMemAlloc_v2 84100 bytes [0x20013f800000 0x20013f814884]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long) - grid size 42,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 84100
+	D_OBJ   34 :: used      84100 bytes, unused          0 bytes
+
+
+	D_OBJ   35 :: cuMemAlloc_v2 84100 bytes [0x20013f814a00 0x20013f829284]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long) - grid size 42,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 84100
+	D_OBJ   35 :: used      84100 bytes, unused          0 bytes
+
+
+	D_OBJ   36 :: cuMemAlloc_v2 84100 bytes [0x20013f829400 0x20013f83dc84]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long) - grid size 42,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 84100
+	D_OBJ   36 :: used      84100 bytes, unused          0 bytes
+
+
+	Data Movement Host[0x10bbc3d0] -> D_OBJ    36 (84100 bytes) 
+	Data Movement Host[0x10ba7b40] -> D_OBJ    35 (84100 bytes) 
+	Data Movement Host[0x10b932b0] -> D_OBJ    34 (84100 bytes) 
+	Data Movement Host[0x1a370180] -> D_OBJ     8 (11943936 bytes) 
+	Data Movement Host[0x15f18120] -> D_OBJ     2 (11943936 bytes) 
+	Data Movement Host[0x16a7c130] -> D_OBJ     3 (11943936 bytes) 
+	Data Movement Host[0x175e0140] -> D_OBJ     4 (11943936 bytes) 
+	Data Movement Host[0x18144150] -> D_OBJ     5 (11943936 bytes) 
+	Data Movement Host[0x18ca8160] -> D_OBJ     6 (11943936 bytes) 
+	Data Movement Host[0x1980c170] -> D_OBJ     7 (11943936 bytes) 
+	D_OBJ   37 :: cuMemAlloc_v2 12194500 bytes [0x2000d2000000 0x2000d2ba12c4]
+	Data Movement Host[0x16ab93f0] -> D_OBJ    37 (12194500 bytes) 
+	D_OBJ   38 :: cuMemAlloc_v2 12194500 bytes [0x20009e400000 0x20009efa12c4]
+	Data Movement Host[0x15f18120] -> D_OBJ    38 (12194500 bytes) 
+	D_OBJ   39 :: cuMemAlloc_v2 95551488 bytes [0x20008b800000 0x200091320000]
+	Data Movement Host[0x20014db30010] -> D_OBJ    39 (95551488 bytes) 
+	Data Movement Host[0x1765a6c0] -> D_OBJ     0 (11943936 bytes) 
+	Data Movement Host[0x181be6d0] -> D_OBJ    33 (24389000 bytes) 
+	Data Movement Host[0x19900c60] -> D_OBJ    15 (23887872 bytes) 
+	Data Movement Host[0x1afc8c70] -> D_OBJ    20 (23887872 bytes) 
+	Data Movement Host[0x7fffffffc6d0] -> D_OBJ     9 (8 bytes) 
+	Data Movement D_OBJ    15 -> Host[0x7fffffffc6b0] (8 bytes) 
+	D_OBJ   40 :: cuMemAlloc_v2 11943936 bytes [0x20009f000000 0x20009fb64000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 11943936
+	D_OBJ   40 :: used   11943936 bytes, unused          0 bytes
+
+
+	D_OBJ   41 :: cuMemAlloc_v2 11943936 bytes [0x200091400000 0x200091f64000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 11943936
+	D_OBJ   41 :: used   11943936 bytes, unused          0 bytes
+
+
+	D_OBJ   42 :: cuMemAlloc_v2 44 bytes [0x20013f83de00 0x20013f83de2c]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long) - grid size 1,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 44
+	D_OBJ   42 :: used         44 bytes, unused          0 bytes
+
+
+	D_OBJ   43 :: cuMemAlloc_v2 44 bytes [0x20013f83e000 0x20013f83e02c]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long) - grid size 1,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 44
+	D_OBJ   43 :: used         44 bytes, unused          0 bytes
+
+
+	D_OBJ   44 :: cuMemAlloc_v2 44 bytes [0x20013f83e200 0x20013f83e22c]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<int>, int>, unsigned long) - grid size 1,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 44
+	D_OBJ   44 :: used         44 bytes, unused          0 bytes
+
+
+	Data Movement Host[0x10850050] -> D_OBJ    42 (44 bytes) 
+	Data Movement Host[0x10850090] -> D_OBJ    43 (44 bytes) 
+	Data Movement Host[0x1c9984f0] -> D_OBJ    40 (11943936 bytes) 
+	Data Movement Host[0x1d4fc500] -> D_OBJ    41 (11943936 bytes) 
+	Data Movement Host[0x1083c310] -> D_OBJ    44 (44 bytes) 
+Running until t=0.010000, Problem size=144x144x144
+cycle = 0, time = 0.000000e+00, dt=7.678749e-08
+	D_OBJ   45 :: cuMemAlloc_v2 191102976 bytes [0x200160000000 0x20016b640000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 46656,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 191102976
+	D_OBJ   45 :: used  191102976 bytes, unused          0 bytes
+
+
+	D_OBJ   46 :: cuMemAlloc_v2 191102976 bytes [0x20016b800000 0x200176e40000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 46656,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 191102976
+	D_OBJ   46 :: used  191102976 bytes, unused          0 bytes
+
+
+	D_OBJ   47 :: cuMemAlloc_v2 191102976 bytes [0x200180000000 0x20018b640000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 46656,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 191102976
+	D_OBJ   47 :: used  191102976 bytes, unused          0 bytes
+
+
+Inspecting function void CalcVolumeForceForElems_kernel<true>(double const*, double const*, double const*, double const*, double, int, int, int const*, double const*, double const*, double const*, double const*, double const*, double const*, double const*, double const*, double*, double*, double*, int*, int) at address 0x200080fbed00
+Kernel void CalcVolumeForceForElems_kernel<true>(double const*, double const*, double const*, double const*, double, int, int, int const*, double const*, double const*, double const*, double const*, double const*, double const*, double const*, double const*, double*, double*, double*, int*, int) - grid size 46656,1,1 - block size 64,1,1 - nregs 252 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 958553313
+	D_OBJ    1 :: used   95551488 bytes, unused          0 bytes
+	D_OBJ   10 :: used   23886912 bytes, unused        960 bytes
+	D_OBJ   11 :: used   23886912 bytes, unused        960 bytes
+	D_OBJ   14 :: used   23886912 bytes, unused        960 bytes
+	D_OBJ   15 :: used   23886912 bytes, unused        960 bytes
+	D_OBJ   19 :: used   23886912 bytes, unused        960 bytes
+	D_OBJ   20 :: used   23886912 bytes, unused        960 bytes
+	D_OBJ   21 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   22 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   23 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   24 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   25 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   26 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   45 :: used  191102976 bytes, unused          0 bytes
+	D_OBJ   46 :: used  191102976 bytes, unused          0 bytes
+	D_OBJ   47 :: used  191102976 bytes, unused          0 bytes
+
+
+Inspecting function AddNodeForcesFromElems_kernel(int, int, int const*, int const*, int const*, double const*, double const*, double const*, double*, double*, double*, int) at address 0x200080fc4d00
+Kernel AddNodeForcesFromElems_kernel(int, int, int const*, int const*, int const*, double const*, double const*, double const*, double*, double*, double*, int) - grid size 47635,1,1 - block size 64,1,1 - nregs 32 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 825118113
+	D_OBJ   30 :: used   24376480 bytes, unused      12520 bytes
+	D_OBJ   31 :: used   24226716 bytes, unused     162284 bytes
+	D_OBJ   32 :: used   24231796 bytes, unused     157204 bytes
+	D_OBJ   37 :: used   12194500 bytes, unused          0 bytes
+	D_OBJ   38 :: used   12194500 bytes, unused          0 bytes
+	D_OBJ   39 :: used   95551488 bytes, unused          0 bytes
+	D_OBJ   45 :: used  191102968 bytes, unused          8 bytes
+	D_OBJ   46 :: used  191102968 bytes, unused          8 bytes
+	D_OBJ   47 :: used  191102968 bytes, unused          8 bytes
+
+
+Inspecting function CalcAccelerationForNodes_kernel(int, double*, double*, double*, double*, double*, double*, double*) at address 0x200080fbb700
+Kernel CalcAccelerationForNodes_kernel(int, double*, double*, double*, double*, double*, double*, double*) - grid size 23818,1,1 - block size 128,1,1 - nregs 22 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 170723000
+	D_OBJ   27 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   28 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   29 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   30 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   31 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   32 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   33 :: used   24389000 bytes, unused          0 bytes
+
+
+Inspecting function ApplyAccelerationBoundaryConditionsForNodes_kernel(int, double*, int*) at address 0x200080fbae00
+Kernel ApplyAccelerationBoundaryConditionsForNodes_kernel(int, double*, int*) - grid size 165,1,1 - block size 128,1,1 - nregs 8 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 252300
+	D_OBJ   27 :: used     168200 bytes, unused   24220800 bytes
+	D_OBJ   34 :: used      84100 bytes, unused          0 bytes
+
+
+Kernel ApplyAccelerationBoundaryConditionsForNodes_kernel(int, double*, int*) - grid size 165,1,1 - block size 128,1,1 - nregs 8 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 252300
+	D_OBJ   28 :: used     168200 bytes, unused   24220800 bytes
+	D_OBJ   35 :: used      84100 bytes, unused          0 bytes
+
+
+Kernel ApplyAccelerationBoundaryConditionsForNodes_kernel(int, double*, int*) - grid size 165,1,1 - block size 128,1,1 - nregs 8 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 252300
+	D_OBJ   29 :: used     168200 bytes, unused   24220800 bytes
+	D_OBJ   36 :: used      84100 bytes, unused          0 bytes
+
+
+Inspecting function CalcPositionAndVelocityForNodes_kernel(int, double, double, double*, double*, double*, double*, double*, double*, double const*, double const*, double const*) at address 0x200080fba200
+Kernel CalcPositionAndVelocityForNodes_kernel(int, double, double, double*, double*, double*, double*, double*, double*, double const*, double const*, double const*) - grid size 23818,1,1 - block size 128,1,1 - nregs 30 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 219501000
+	D_OBJ   21 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   22 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   23 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   24 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   25 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   26 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   27 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   28 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   29 :: used   24389000 bytes, unused          0 bytes
+
+
+	D_OBJ   48 :: cuMemAlloc_v2 23887872 bytes [0x20018b800000 0x20018cec8000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 23887872
+	D_OBJ   48 :: used   23887872 bytes, unused          0 bytes
+
+
+	D_OBJ   49 :: cuMemAlloc_v2 23887872 bytes [0x20018d000000 0x20018e6c8000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 23887872
+	D_OBJ   49 :: used   23887872 bytes, unused          0 bytes
+
+
+	D_OBJ   50 :: cuMemAlloc_v2 23887872 bytes [0x20018e800000 0x20018fec8000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 23887872
+	D_OBJ   50 :: used   23887872 bytes, unused          0 bytes
+
+
+	D_OBJ   51 :: cuMemAlloc_v2 23887872 bytes [0x200190000000 0x2001916c8000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 23887872
+	D_OBJ   51 :: used   23887872 bytes, unused          0 bytes
+
+
+	D_OBJ   52 :: cuMemAlloc_v2 23887872 bytes [0x200191800000 0x200192ec8000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 23887872
+	D_OBJ   52 :: used   23887872 bytes, unused          0 bytes
+
+
+	D_OBJ   53 :: cuMemAlloc_v2 23887872 bytes [0x200193000000 0x2001946c8000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 23887872
+	D_OBJ   53 :: used   23887872 bytes, unused          0 bytes
+
+
+	D_OBJ   54 :: cuMemAlloc_v2 23887872 bytes [0x200194800000 0x200195ec8000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 5832,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 23887872
+	D_OBJ   54 :: used   23887872 bytes, unused          0 bytes
+
+
+	D_OBJ   55 :: cuMemAlloc_v2 24883200 bytes [0x200196000000 0x2001977bb000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 6075,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 24883200
+	D_OBJ   55 :: used   24883200 bytes, unused          0 bytes
+
+
+	D_OBJ   56 :: cuMemAlloc_v2 24883200 bytes [0x200197800000 0x200198fbb000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 6075,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 24883200
+	D_OBJ   56 :: used   24883200 bytes, unused          0 bytes
+
+
+	D_OBJ   57 :: cuMemAlloc_v2 24883200 bytes [0x200199000000 0x20019a7bb000]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 6075,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 24883200
+	D_OBJ   57 :: used   24883200 bytes, unused          0 bytes
+
+
+Inspecting function CalcKinematicsAndMonotonicQGradient_kernel(int, int, double, int const*, double const*, double const*, double const*, double const*, double const*, double const*, double const*, double const*, double*, double*, double*, double*, double*, double*, double*, double*, double*, double*, double*, double*, double*, int*, int) at address 0x200080fb4100
+Kernel CalcKinematicsAndMonotonicQGradient_kernel(int, int, double, int const*, double const*, double const*, double const*, double const*, double const*, double const*, double const*, double const*, double*, double*, double*, double*, double*, double*, double*, double*, double*, double*, double*, double*, double*, int*, int) - grid size 46656,1,1 - block size 64,1,1 - nregs 128 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 600832213
+	D_OBJ    1 :: used   95551488 bytes, unused          0 bytes
+	D_OBJ   14 :: used   23885784 bytes, unused       2088 bytes
+	D_OBJ   15 :: used   23885744 bytes, unused       2128 bytes
+	D_OBJ   16 :: used   23886080 bytes, unused       1792 bytes
+	D_OBJ   17 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   18 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   21 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   22 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   23 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   24 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   25 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   26 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   48 :: used   23885860 bytes, unused       2012 bytes
+	D_OBJ   49 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   50 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   51 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   52 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   53 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   54 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   55 :: used   23887872 bytes, unused     995328 bytes
+	D_OBJ   56 :: used   23887872 bytes, unused     995328 bytes
+	D_OBJ   57 :: used   23887872 bytes, unused     995328 bytes
+
+
+Inspecting function CalcMonotonicQRegionForElems_kernel(double, double, double, double, double, int, int*, int*, int*, int*, int*, int*, int*, int*, double*, double*, double*, double*, double*, double*, double*, double*, double*, double*, double*, double*, double*, double, int*) at address 0x200080fb1900
+Kernel CalcMonotonicQRegionForElems_kernel(double, double, double, double, double, int, int*, int*, int*, int*, int*, int*, int*, int*, double*, double*, double*, double*, double*, double*, double*, double*, double*, double*, double*, double*, double*, double, int*) - grid size 23328,1,1 - block size 128,1,1 - nregs 32 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 417654481
+	D_OBJ    2 :: used   11860992 bytes, unused      82944 bytes
+	D_OBJ    3 :: used   11861344 bytes, unused      82592 bytes
+	D_OBJ    4 :: used   11861556 bytes, unused      82380 bytes
+	D_OBJ    5 :: used   11860992 bytes, unused      82944 bytes
+	D_OBJ    6 :: used   11860992 bytes, unused      82944 bytes
+	D_OBJ    7 :: used   11860992 bytes, unused      82944 bytes
+	D_OBJ    8 :: used   11943936 bytes, unused          0 bytes
+	D_OBJ   11 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   12 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   13 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   15 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   17 :: used   23707488 bytes, unused     180384 bytes
+	D_OBJ   20 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   41 :: used   11943936 bytes, unused          0 bytes
+	D_OBJ   48 :: used   23887124 bytes, unused        748 bytes
+	D_OBJ   52 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   53 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   54 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   55 :: used   23887872 bytes, unused     995328 bytes
+	D_OBJ   56 :: used   23887872 bytes, unused     995328 bytes
+	D_OBJ   57 :: used   23887864 bytes, unused     995336 bytes
+
+
+Inspecting function ApplyMaterialPropertiesAndUpdateVolume_kernel(int, double, double, double, double*, double*, double*, double*, double, double, double, double, double, int*, double*, double*, double*, double*, double, double*, double, int*, int, int const*, int const*, int) at address 0x200080fad600
+Kernel ApplyMaterialPropertiesAndUpdateVolume_kernel(int, double, double, double, double*, double*, double*, double*, double, double, double, double, double, int*, double*, double*, double*, double*, double, double*, double, int*, int, int const*, int const*, int) - grid size 23328,1,1 - block size 128,1,1 - nregs 58 - shmem 0 - cuda stream id 0
+Kernel_used_bytes = 226934868
+	D_OBJ    9 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   10 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   11 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   12 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   13 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   14 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   16 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   19 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   41 :: used   11943936 bytes, unused          0 bytes
+	D_OBJ   42 :: used         40 bytes, unused          4 bytes
+	D_OBJ   43 :: used         44 bytes, unused          0 bytes
+	D_OBJ   48 :: used   23887872 bytes, unused          0 bytes
+
+
+	D_OBJ   58 :: cuMemAlloc_v2 8192 bytes [0x20013f83e400 0x20013f840400]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 2,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 8192
+	D_OBJ   58 :: used       8192 bytes, unused          0 bytes
+
+
+	D_OBJ   59 :: cuMemAlloc_v2 8192 bytes [0x20013f840400 0x20013f842400]
+Kernel void thrust::cuda_cub::core::_kernel_agent<thrust::cuda_cub::__parallel_for::ParallelForAgent<thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>, thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long>(thrust::cuda_cub::__uninitialized_fill::functor<thrust::device_ptr<double>, double>, unsigned long) - grid size 2,1,1 - block size 256,1,1 - nregs 12 - shmem 0 - cuda stream id 1
+Kernel_used_bytes = 8192
+	D_OBJ   59 :: used       8192 bytes, unused          0 bytes
+
+
+Inspecting function void CalcTimeConstraintsForElems_kernel<128>(int, double, double, int*, double*, double*, double*, double*, double*) at address 0x200080fab300
+Kernel void CalcTimeConstraintsForElems_kernel<128>(int, double, double, int*, double*, double*, double*, double*, double*) - grid size 1024,1,1 - block size 128,1,1 - nregs 32 - shmem 2048 - cuda stream id 0
+Kernel_used_bytes = 83623936
+	D_OBJ    0 :: used   11943936 bytes, unused          0 bytes
+	D_OBJ   17 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   18 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   19 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   58 :: used       8192 bytes, unused          0 bytes
+	D_OBJ   59 :: used       8192 bytes, unused          0 bytes
+
+
+Inspecting function void CalcMinDtOneBlock<1024>(double*, double*, double*, double*, int) at address 0x200080fa9900
+Kernel void CalcMinDtOneBlock<1024>(double*, double*, double*, double*, int) - grid size 2,1,1 - block size 1024,1,1 - nregs 13 - shmem 16384 - cuda stream id 275824784
+Kernel_used_bytes = 16400
+	D_OBJ   58 :: used       8192 bytes, unused          0 bytes
+	D_OBJ   59 :: used       8192 bytes, unused          0 bytes
+
+
+   Used Memory         =  3310.0000 Mb
+	Data Movement D_OBJ     9 -> Host[0x7fffffffc8e0] (8 bytes) 
+Run completed:  
+   Problem size        =  144 
+   MPI tasks           =  1 
+   Iteration count     =  1 
+   Final Origin Energy = 1.293925e+09 
+	Data Movement D_OBJ     9 -> Host[0x114c8ec0] (165888 bytes) 
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 0.000000e+00
+        TotalAbsDiff = 0.000000e+00
+        MaxRelDiff   = 0.000000e+00
+
+
+Elapsed time         =      31.12 (s)
+Grind time (us/z/c)  =  10.421035 (per dom)  ( 10.421035 overall)
+FOM                  =  95.959761 (z/s)
+
+	Data Movement D_OBJ    21 -> Host[0x26fc0480] (24389000 bytes) 
+	Data Movement D_OBJ    22 -> Host[0x28702a10] (24389000 bytes) 
+	Data Movement D_OBJ    23 -> Host[0x29e44fa0] (24389000 bytes) 
+
+
+Enter process_global_data_access
+Total used_bytes = 1826013189
+	D_OBJ    0 :: used   11943936 bytes, unused          0 bytes
+	D_OBJ    1 :: used   95551488 bytes, unused          0 bytes
+	D_OBJ    2 :: used   11943936 bytes, unused          0 bytes
+	D_OBJ    3 :: used   11943936 bytes, unused          0 bytes
+	D_OBJ    4 :: used   11943936 bytes, unused          0 bytes
+	D_OBJ    5 :: used   11943936 bytes, unused          0 bytes
+	D_OBJ    6 :: used   11943936 bytes, unused          0 bytes
+	D_OBJ    7 :: used   11943936 bytes, unused          0 bytes
+	D_OBJ    8 :: used   11943936 bytes, unused          0 bytes
+	D_OBJ    9 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   10 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   11 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   12 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   13 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   14 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   15 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   16 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   17 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   18 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   19 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   20 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   21 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   22 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   23 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   24 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   25 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   26 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   27 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   28 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   29 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   30 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   31 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   32 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   33 :: used   24389000 bytes, unused          0 bytes
+	D_OBJ   34 :: used      84100 bytes, unused          0 bytes
+	D_OBJ   35 :: used      84100 bytes, unused          0 bytes
+	D_OBJ   36 :: used      84100 bytes, unused          0 bytes
+	D_OBJ   37 :: used   12194500 bytes, unused          0 bytes
+	D_OBJ   38 :: used   12194500 bytes, unused          0 bytes
+	D_OBJ   39 :: used   95551488 bytes, unused          0 bytes
+	D_OBJ   40 :: used   11943936 bytes, unused          0 bytes
+	D_OBJ   41 :: used   11943936 bytes, unused          0 bytes
+	D_OBJ   42 :: used         44 bytes, unused          0 bytes
+	D_OBJ   43 :: used         44 bytes, unused          0 bytes
+	D_OBJ   44 :: used         44 bytes, unused          0 bytes
+	D_OBJ   45 :: used  191102976 bytes, unused          0 bytes
+	D_OBJ   46 :: used  191102976 bytes, unused          0 bytes
+	D_OBJ   47 :: used  191102976 bytes, unused          0 bytes
+	D_OBJ   48 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   49 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   50 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   51 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   52 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   53 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   54 :: used   23887872 bytes, unused          0 bytes
+	D_OBJ   55 :: used   24883200 bytes, unused          0 bytes
+	D_OBJ   56 :: used   24883200 bytes, unused          0 bytes
+	D_OBJ   57 :: used   24883200 bytes, unused          0 bytes
+	D_OBJ   58 :: used       8192 bytes, unused          0 bytes
+	D_OBJ   59 :: used       8192 bytes, unused          0 bytes
+nvbit_at_ctx_term
+
+----------------------------------------------------------------------------------------------------
+NVBit exit
