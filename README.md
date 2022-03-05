@@ -12,8 +12,24 @@ make
 
 2. Compile an application (4 example applications are provided in /apps) to be profiled:
 
+BFS
 ```bash
 cd apps/bfs_um
+make
+```
+XSBench
+```bash
+cd apps/XSBench/cuda_um
+make
+```
+matmul
+```bash
+cd apps/matmul_um
+make
+```
+LULESH
+```bash
+cd apps/LULESH/cuda/src
 make
 ```
 
