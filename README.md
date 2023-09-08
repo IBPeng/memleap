@@ -56,7 +56,7 @@ cat ./apps/matmul_um/output_profiling_matmul.log
 cat ./apps/LULESH/cuda/src/output_profiling_lulesh.log
 ```
 
-## Limitatoins
+## Limitations
 
 Profiling may hangs for large problems, which may be resolved by tuning the number of channels and buffer size in config.h
 Currently profiling multi-GPU runs is not supported. 
